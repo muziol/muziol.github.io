@@ -1,0 +1,21 @@
+body {
+  margin: 0; }
+
+.nav {
+  background: linear-gradient(to right, red, yellow, blue);
+  text-align: center;
+  width: 100vw;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  z-index: 1030;
+  position: fixed;
+  display: block; }
+
+.about {
+  background: linear-gradient(to right, pink, red);
+  width: 100vw;
+  height: calc(100vh - 50px); }
+
+.contact {
+  height: calc(100vh - 50px); }
