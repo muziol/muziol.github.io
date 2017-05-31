@@ -2,8 +2,8 @@ body {
 	margin: 0;
 }
 
-.nav {
-	background: linear-gradient(to right, red, yellow, blue);
+nav {
+	background: linear-gradient(to right, rgba(255, 0, 0, 0.6), rgba(255, 255, 0, 0.6), rgba(0, 0, 255, 0.6));
 	text-align: center;
 	width: 100vw;
 	height: 50px;
@@ -12,15 +12,33 @@ body {
 	z-index: 1030;
 	position: fixed;
 	display: block;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li{
+			display: inline;
+			font-size: 20px;
+			margin-right: 10px;
+			a{
+				text-decoration: none;
+				color: #000;
+			}
+			&:nth-child(3){
+				font-size: 30px;
+			}
+		}
+	}
 }
 
 .about {
 	background: linear-gradient(to right, pink, red);
 	width: 100vw;
-	height: calc(100vh - 50px;);
+	height: calc(100vh - 50px);
+	padding-top: 50px;
 }
 
 .contact {
-	height: calc(100vh - 50px);
+	height: 100vh;
 }
 
